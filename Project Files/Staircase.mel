@@ -1,0 +1,13 @@
+global proc GenerateStaircase(int $stairAmount; float $stairLength; float $stairWidth; float $stairHeight; float $stairPivot; float $stepHeight; float $stepRotate);
+ 
+ for ($i = 1; $i <= 26; $i++)
+{
+polyCube -w 1 -h 1 -d 1 -sx 1 -sy 1 -sz 1 -ax 0 1 0 -cuv 4 -ch 1;
+scale -r 5.023347 1 1 ;
+scale -r 1 0.338934 1 ;
+xform -rotatePivot 4 0 0;
+move -r 0 ($i * 1.289988) 0 ;
+rotate -r -os -fo 0 ($i * 13.961947) 0 ;
+}
+}
+GenerateStaircase(13, 5.023347, 1, 0.338934, 4, 1.289988, 13.961947);
