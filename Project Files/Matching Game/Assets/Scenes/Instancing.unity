@@ -132,8 +132,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 300830565}
+  - component: {fileID: 300830566}
   m_Layer: 0
-  m_Name: Instancer
+  m_Name: InstancerGO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,6 +155,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &300830566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300830564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c0dee154dfc7fb42a8ea28be0baf917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRun: 0
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 300830566}
+        m_TargetAssemblyTypeName: CoroutineBehavior, Assembly-CSharp
+        m_MethodName: StartRepeatUntilFalse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  startCountEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  repeatCountEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endCountEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  repeatUntilFalse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: afa71a06fa8e8db4b9d0b58340784c68, type: 2}
+        m_TargetAssemblyTypeName: Instancer, Assembly-CSharp
+        m_MethodName: CreateInstanceListRandpmly
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 3db6879971eb1af4ea0f9ac18b667691, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Vector3DataList, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: afa05d87160f3d048bc67ca0b525b5cb, type: 2}
+        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
+        m_MethodName: SetCurrentColorRandomly
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  counterNum: {fileID: 0}
+  seconds: 1
 --- !u!1 &1665104430
 GameObject:
   m_ObjectHideFlags: 0
