@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 123Go!
+  m_EditorClassIdentifier: 
+  templateScene: {fileID: 102900000, guid: 57f88ad61f1649a4b90c3050e4e3d0a6, type: 3}
+  templateName: 
+  description: 
+  preview: {fileID: 0}
+  dependencies:
+  - dependency: {fileID: 11400000, guid: 6283283eb37cff045a5a4b97eb93de6e, type: 2}
+    instantiationMode: 1
+  - dependency: {fileID: 9100000, guid: a8766a6e34fb6b045aebd69bce17acec, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 75345457f760ef8489aca945eed452a9, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 82782320f2af25642aa7ba5aaa423392, type: 2}
+    instantiationMode: 0
+  templatePipeline: {fileID: 0}
+  addToDefaults: 0
