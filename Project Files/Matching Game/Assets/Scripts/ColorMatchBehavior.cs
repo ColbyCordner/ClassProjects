@@ -7,6 +7,7 @@ public class ColorMatchBehavior : MatchBehavior
 {
     public ColorIDDataList colorIDDataListObj;
 
+//Sets the Color ID of the object as whatever color the object currently is
     private void Awake()
     {
         idObj = colorIDDataListObj.currentColor;
