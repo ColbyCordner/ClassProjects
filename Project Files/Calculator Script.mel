@@ -1,0 +1,114 @@
+global proc Addition(float $numbers[])
+{
+   int $size = size($numbers);
+   float $result = 0;
+   for ($i = 0; $i < $size; $i++)
+   {
+    float $tempNum = $numbers[$i];
+    $result = $result + $tempNum;
+   }
+   print($result);
+}
+
+global proc Subtraction(float $numbers[])
+{
+   int $size = size($numbers);
+   float $result = $numbers[0];
+   for ($i = 1; $i < $size; $i++)
+   {
+    float $tempNum = $numbers[$i];
+    $result = $result -$tempNum;
+   }
+   print($result);
+}
+
+global proc Multiplication(float $numbers[])
+{
+   int $size = size($numbers);
+   float $result = 1;
+   for ($i = 0; $i < $size; $i++)
+   {
+    float $tempNum = $numbers[$i];
+    $result = $result * $tempNum;
+   }
+   print($result);
+}
+
+global proc Division(float $numbers[])
+{
+   int $size = size($numbers);
+   float $result = $numbers[0];
+   for ($i = 1; $i < $size; $i++)
+   {
+    float $tempNum = $numbers[$i];
+    $result = $result / $tempNum;
+   }
+   print($result);
+}
+
+global proc Power(float $firstNumber, float $secondNumber)
+{
+    float $result = pow ($firstNumber, $secondNumber);
+    print ($result);
+}
+
+global proc Mean(float $numbers[])
+{
+   int $size = size($numbers);
+   float $result = 0;
+   for ($i = 0; $i < $size; $i++)
+   {
+    float $tempNum = $numbers[$i];
+    $result = $result + $tempNum;
+   }
+
+    $newNum = $result / $size;
+   
+    print $newNum;
+}
+
+global proc Median(float $numbers[])
+{
+    $sortedNumbers = sort($numbers);
+    $size = size($numbers);
+    $tempNum = $size / 2;
+    $result = $numbers[$tempNum];
+    print $result;
+}
+
+
+/*global proc Calculator(float $numbers[], float $firstNumber, float $secondNumber, int $operation);
+{
+    if ($operation == 1)
+    {
+        print("The sum of " + $numbers[] + "is " + Addition($numbers));
+    }
+    else if ($operation == 2) 
+    {
+        print("The difference of " + $numbers[] + "is " + Subtraction($numbers));
+    }
+    else if ($operation == 3) 
+    {
+        print ("The product of " + $numbers[] + "is " + Multiplication($numbers));
+    }
+    else if ($operation == 4) 
+    {
+        print ("The quotient of " + $numbers[] + "is " + Division($numbers));
+    }
+    else if ($operation == 5) 
+    {
+        print ("The result of " + $firstNumber + "to the power of " + $secondNumber + "is " + Power($numbers));
+    }
+    else if ($operation == 6) 
+    {
+        print ("The mean of " + $numbers[] + "is " + Mean($numbers));
+    }
+    else if ($operation == 7) 
+    {
+        print ("The median of " + $numbers[] + "is " + Median($numbers));
+    }
+    else
+    {
+        print("Please input a valid operation type as a value, 1 through 7");
+    }
+}*/
