@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 7036413711670030563}
   - component: {fileID: 1277672836860195242}
   - component: {fileID: 728347760336896424}
+  - component: {fileID: 520675188482280793}
+  - component: {fileID: 4564057349263136244}
+  - component: {fileID: 7561641872835580870}
   m_Layer: 7
   m_Name: HiddenDot
   m_TagString: Untagged
@@ -97,3 +100,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2214874da7b4f4e97faec4cb86b4a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &520675188482280793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378786341528982884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7ee7f14a47d81439afa047fb8302e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchDelayedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: afa05d87160f3d048bc67ca0b525b5cb, type: 2}
+--- !u!114 &4564057349263136244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378786341528982884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08aa84e4d131eb544aa7b532e68f8aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: afa05d87160f3d048bc67ca0b525b5cb, type: 2}
+--- !u!114 &7561641872835580870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378786341528982884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9af517d222a9c64a8fc630523dbf3ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  disableEvent:
+    m_PersistentCalls:
+      m_Calls: []

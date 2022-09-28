@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 9093077089398326219}
   - component: {fileID: -4765156381834344537}
   - component: {fileID: -2836648003461700621}
-  - component: {fileID: -579453286197112907}
   - component: {fileID: 3343944160630097447}
-  - component: {fileID: -2417921552526003637}
+  - component: {fileID: 1106305421751627294}
+  - component: {fileID: -3486551173167509088}
+  - component: {fileID: -579453286197112907}
   - component: {fileID: -4407197490406000953}
   m_Layer: 7
   m_Name: Ring
@@ -134,18 +135,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-579453286197112907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4303911591893800883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2214874da7b4f4e97faec4cb86b4a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3343944160630097447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +168,7 @@ MonoBehaviour:
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-2417921552526003637
+--- !u!114 &1106305421751627294
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,7 +183,19 @@ MonoBehaviour:
   idObj: {fileID: 0}
   matchEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 728347760336896424, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
+        m_TargetAssemblyTypeName: SpriteBehavior, Assembly-CSharp
+        m_MethodName: ChangeRendererColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: ColorID, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   noMatchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -202,6 +203,35 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: afa05d87160f3d048bc67ca0b525b5cb, type: 2}
+--- !u!114 &-3486551173167509088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303911591893800883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08aa84e4d131eb544aa7b532e68f8aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: afa05d87160f3d048bc67ca0b525b5cb, type: 2}
+--- !u!114 &-579453286197112907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303911591893800883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2214874da7b4f4e97faec4cb86b4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &-4407197490406000953
 AudioSource:
   m_ObjectHideFlags: 0
