@@ -183,19 +183,7 @@ MonoBehaviour:
   idObj: {fileID: 0}
   matchEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 728347760336896424, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
-        m_TargetAssemblyTypeName: SpriteBehavior, Assembly-CSharp
-        m_MethodName: ChangeRendererColor
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: ColorID, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   noMatchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -338,6 +326,22 @@ PrefabInstance:
     - target: {fileID: 378786341528982884, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
       propertyPath: m_Name
       value: HiddenDot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277672836860195242, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
+      propertyPath: m_Color.a
+      value: 0.30588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277672836860195242, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277672836860195242, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277672836860195242, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7036413711670030563, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
       propertyPath: m_RootOrder

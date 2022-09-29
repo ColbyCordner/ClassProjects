@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7036413711670030563}
   - component: {fileID: 1277672836860195242}
-  - component: {fileID: 728347760336896424}
-  - component: {fileID: 520675188482280793}
-  - component: {fileID: 4564057349263136244}
-  - component: {fileID: 7561641872835580870}
+  - component: {fileID: -707952896272188595}
+  - component: {fileID: 3243461479619279323}
+  - component: {fileID: -1649702116562698080}
   m_Layer: 7
   m_Name: HiddenDot
   m_TagString: Untagged
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.25490198}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.33333334}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -88,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &728347760336896424
+--- !u!114 &-707952896272188595
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,30 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2214874da7b4f4e97faec4cb86b4a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &520675188482280793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378786341528982884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b7ee7f14a47d81439afa047fb8302e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idObj: {fileID: 0}
-  matchEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  noMatchEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  noMatchDelayedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  colorIDDataListObj: {fileID: 11400000, guid: afa05d87160f3d048bc67ca0b525b5cb, type: 2}
---- !u!114 &4564057349263136244
+--- !u!114 &3243461479619279323
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,7 +116,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: afa05d87160f3d048bc67ca0b525b5cb, type: 2}
---- !u!114 &7561641872835580870
+--- !u!114 &-1649702116562698080
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,15 +125,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 378786341528982884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9af517d222a9c64a8fc630523dbf3ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b7ee7f14a47d81439afa047fb8302e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startEvent:
+  idObj: {fileID: 0}
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -1649702116562698080}
+        m_TargetAssemblyTypeName: ColorMatchBehavior, Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1277672836860195242}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  noMatchEvent:
     m_PersistentCalls:
       m_Calls: []
-  awakeEvent:
+  noMatchDelayedEvent:
     m_PersistentCalls:
       m_Calls: []
-  disableEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: afa05d87160f3d048bc67ca0b525b5cb, type: 2}
