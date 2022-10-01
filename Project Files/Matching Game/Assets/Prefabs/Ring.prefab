@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 933733241998330600}
   - component: {fileID: 6024445671470898468}
-  - component: {fileID: 9093077089398326219}
   - component: {fileID: -4765156381834344537}
   - component: {fileID: -2836648003461700621}
   - component: {fileID: 3343944160630097447}
@@ -93,19 +92,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &9093077089398326219
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4303911591893800883}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.88, y: 2.88, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-4765156381834344537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +169,19 @@ MonoBehaviour:
   idObj: {fileID: 0}
   matchEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1106305421751627294}
+        m_TargetAssemblyTypeName: ColorMatchBehavior, Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1277672836860195242, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   noMatchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -323,6 +321,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 933733241998330600}
     m_Modifications:
+    - target: {fileID: -7354719505537432720, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
+      propertyPath: matchEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1106305421751627294}
     - target: {fileID: 378786341528982884, guid: 977cc2be516a9c24b83f919a1e0ba9ee, type: 3}
       propertyPath: m_Name
       value: HiddenDot
