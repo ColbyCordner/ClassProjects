@@ -1,0 +1,54 @@
+string $mWindow = `window- height 100 - title "Random Placement Generator" -sizeable 4 -width 250`;
+    columnLayout;
+    text -label "Duplication Amount";
+        optionVar -stringValue "dupeAmount" `floatField`;
+        button -label "Randomize Placement" -command Duplicate;
+        string $testRow = `rowLayout -numberOfColumns 3`;
+            columnLayout;
+            text -label "Max X";
+            optionVar -stringValue "maxX" `floatField`;
+            text -label "Min X";
+            optionVar -stringValue "minX" `floatField`;
+            setParent $testRow;
+            columnLayout;
+            text -label "Max Y";
+            optionVar -stringValue "maxY" `floatField`;
+            text -label "Min Y";
+            optionVar -stringValue "minY" `floatField`;
+            setParent $testRow;
+            columnLayout;
+            text -label "Max Z";
+            optionVar -stringValue "maxZ" `floatField`;
+            text -label "Min Z";
+            optionVar -stringValue "minZ" `floatField`;
+
+showWindow $mWindow;
+
+
+global proc Duplicate()
+{
+    string $field1 = `optionVar -q "dupeAmount"`;
+    string $field2 = `optionVar -q "maxX"`;
+    string $field3 = `optionVar -q "minX"`;
+    string $field4 = `optionVar -q "maxY"`;
+    string $field5 = `optionVar -q "minY"`;
+    string $field6 = `optionVar -q "maxZ"`;
+    string $field7 = `optionVar -q "minZ"`;
+
+    float $dupeAmount = `floatField -q -value $field1`;
+    float $maxX = `floatField -q -value $field2`;
+    float $minX = `floatField -q -value $field3`;
+    float $maxY = `floatField -q -value $field4`;
+    float $minY = `floatField -q -value $field5`;
+    float $maxZ = `floatField -q -value $field6`;
+    float $minZ = `floatField -q -value $field7`;
+
+    for($i = 1; $i < $dupeAmount; $i++)
+{
+    duplicate -rr;
+    int $randX = `rand $minX $maxX`;
+    int $randY = `rand $minY $maxY`;
+    int $randZ = `rand $minZ $maxZ`;
+    move $randX $randY $randZ;
+}
+}
