@@ -6,6 +6,7 @@ public class MatchBehavior : MonoBehaviour
 {
     public ID idObj;
     public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
+    //On collision with another object
     private IEnumerator OnTriggerEnter(Collider other)
     {
         var tempObj = other.GetComponent<IDContainerBehavior>();
